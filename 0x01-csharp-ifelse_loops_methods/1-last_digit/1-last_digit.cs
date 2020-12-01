@@ -9,7 +9,7 @@ class Program
         int last_num = number % 10;
         Console.Write("The last digit of {0} is {1} and is ", number, last_num);
         if (last_num > 5)
-            Console.WriteLine("greater thatn 5");
+            Console.WriteLine("greater that 5");
         else if (last_num == 0)
             Console.WriteLine("0");
         else
