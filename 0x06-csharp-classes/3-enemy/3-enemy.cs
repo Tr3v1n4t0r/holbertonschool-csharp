@@ -21,7 +21,7 @@ namespace Enemies
             this.health = value;
         }
         /// <summary>Gets Zombie health.</summary>
-        /// <returns>Zombie health</summary>
+        /// <returns>Zombie health</returns>
         public int GetHealth()
         {
             return this.health;
