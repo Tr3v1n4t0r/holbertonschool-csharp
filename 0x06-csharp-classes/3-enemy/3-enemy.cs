@@ -10,7 +10,7 @@ namespace Enemies
         /// <summary>Zombie Constructor.</summary>
         public Zombie()
         {
-            health = 0;
+            this.health = 0;
         }
         /// <summary>Zombie Constructor.</summary>
         /// <param name="value">Health</param>
