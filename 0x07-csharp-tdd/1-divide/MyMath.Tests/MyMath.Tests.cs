@@ -45,12 +45,5 @@ namespace MyMath.Tests
             int [,] output = MyMath.Matrix.Divide(null, 3);
             Assert.IsNull(output);
         }
-
-        [Test]
-        public void Null_by_Zero()
-        {
-            int [,] output = MyMath.Matrix.Divide(null, 0);
-            Assert.IsNull(output);
-        }
     }
 }
