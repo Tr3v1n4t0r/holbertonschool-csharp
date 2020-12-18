@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using System;
 
-namespace MyMath.Tests
+namespace Tests
 {
     public class Tests
     {
