@@ -1,6 +1,6 @@
 using System;
 
-/// <summary>Class to contain methods for objects.<summary>
+/// <summary>Class to contain methods for objects.</summary>
 class Obj
 {
     /// <summary>Checks if an object is an int.</summary>
