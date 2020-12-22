@@ -26,7 +26,7 @@ class Rectangle : Shape
     }
     public int Height
     {
-        get { return this.Height; }
+        get { return this.height; }
         set {
             if (value < 0)
                 throw new ArgumentException("Height must be greater than or equal to 0");
