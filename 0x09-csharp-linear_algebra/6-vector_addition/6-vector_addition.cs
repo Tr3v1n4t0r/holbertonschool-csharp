@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 
 /// <summary>Contains methods for vector math.</summary>
 class VectorMath
@@ -8,7 +7,7 @@ class VectorMath
     /// <param name="vector1">1st vector</param>
     /// <param name="vector2">2nd vector</param>
     /// <returns>The sum of the vector.</returns>
-    public static double Add(double[] vector1, double[] vector2)
+    public static double[] Add(double[] vector1, double[] vector2)
     {
         if (vector1.Length != vector2.Length || vector1.Length < 3 || vector1.Length > 3)
             return new double[1] {-1};
