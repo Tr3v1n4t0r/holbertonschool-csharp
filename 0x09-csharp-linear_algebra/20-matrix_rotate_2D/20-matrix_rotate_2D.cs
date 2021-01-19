@@ -17,7 +17,7 @@ class MatrixMath
 
         double[,] rot = new double[matrix.GetLength(0), 2];
 
-        for (uint i = 0; i < product.GetLength(0); i++)
+        for (uint i = 0; i < matrix.GetLength(0); i++)
         {
             rot[i, 0] = Math.Round(matrix[i, 0] * cos - matrix[i, 1] * sin, 2);
             rot[i, 1] = Math.Round(matrix[i, 0] * sin + matrix[i, 1] * cos, 2);
