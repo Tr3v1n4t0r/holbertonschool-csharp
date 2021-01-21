@@ -18,7 +18,7 @@ class MatrixMath
         for (uint i = 0; i < matrix.GetLength(0); i++)
         {
             for (uint j = 0; j < matrix.GetLength(1); j++)
-                product[i, j] = matrix[i, j] * scalar;
+                product[i, j] = Math.Round(matrix[i, j] * scalar, 2);
         }
 
         return product;
