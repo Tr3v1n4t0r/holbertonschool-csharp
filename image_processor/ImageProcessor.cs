@@ -12,6 +12,7 @@ class ImageProcessor
     public static void Inverse(string[] filenames)
     {
         ChangeFiles(filenames, "_inverse", (byte[] bytes) => {
+
             for (int i = 0; i < bytes.Length; i++)
             {
                 bytes[i] = (byte)(255 - bytes[i]);
@@ -105,7 +106,7 @@ class ImageProcessor
         int bytes = Math.Abs(bmData.Stride) * bm.Height;
         byte[] rgbValues = new byte[bytes];
 
-        System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, p, bytes);
+        System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, bytes);
 
         f(rgbValues);
 
