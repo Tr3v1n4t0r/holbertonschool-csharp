@@ -42,7 +42,7 @@ class Queue<T>
     }
 
     /// <summary>Gets the number of items in the Queue.</summary>
-    /// <return>The number of items in the Queue.</returns>
+    /// <returns>The number of items in the Queue.</returns>
     public int Count()
     {
         return this.count;
