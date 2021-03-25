@@ -21,6 +21,7 @@ interface IInteractive
 interface IBreakable
 {
     int durability { get; set; }
+    void Break();
 }
 
 /// <summary>Defines the properties of collectable objects.</summary>
@@ -41,8 +42,13 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
 
     }
 
+    public void Break()
+    {
+
+    }
+
     public void Collect()
     {
-        
+
     }
 }
