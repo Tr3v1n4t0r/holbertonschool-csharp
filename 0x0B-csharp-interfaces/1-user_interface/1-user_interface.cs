@@ -5,9 +5,11 @@ abstract class Base
 {
     public string name { get; set; }
 
+    /// <summary>Gets the string representation of the instance.</summary>
+    /// <returns>The string representation.</returns>
     public override string ToString()
     {
-        return $"{name} is a {this.GetType(). Name}";
+        return String.Format("{0} is a {1}", name, this.GetType().Name);
     }
 }
 
@@ -38,17 +40,11 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
     public bool isCollected { get; set; }
 
     public void Interact()
-    {
-
-    }
+    {}
 
     public void Break()
-    {
-
-    }
+    {}
 
     public void Collect()
-    {
-
-    }
+    {}
 }
