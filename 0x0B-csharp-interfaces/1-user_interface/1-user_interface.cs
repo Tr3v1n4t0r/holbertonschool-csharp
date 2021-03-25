@@ -3,7 +3,7 @@ using System;
 /// <summary>A base class for all game objects.</summary>
 abstract class Base
 {
-    public string name { get; set; }
+    public string name = "";
 
     /// <summary>Gets the string representation of the instance.</summary>
     /// <returns>The string representation.</returns>
