@@ -13,20 +13,17 @@ abstract class Base
     }
 }
 
-/// <summary>Defines the properties of an interactive object.</summary>
 interface IInteractive
 {
     void Interact();
 }
 
-/// <summary>Defines the properties of breakable objects.</summary>
 interface IBreakable
 {
     int durability { get; set; }
     void Break();
 }
 
-/// <summary>Defines the properties of collectable objects.</summary>
 interface ICollectable
 {
     bool isCollected { get; set; }
@@ -39,12 +36,9 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
     public int durability { get; set; }
     public bool isCollected { get; set; }
 
-    public void Interact()
-    {}
+    public void Interact() { }
 
-    public void Break()
-    {}
+        public void Break() { }
 
-    public void Collect()
-    {}
+        public void Collect() { }
 }
