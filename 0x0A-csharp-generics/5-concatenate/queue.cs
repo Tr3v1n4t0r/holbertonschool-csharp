@@ -95,7 +95,7 @@ class Queue<T>
         if (count == 0)
         {
             Console.WriteLine("Queue is empty");
-            return;
+            return null;
         }
         if (typeof(T) != typeof(String) && typeof(T) != typeof(Char))
         {
