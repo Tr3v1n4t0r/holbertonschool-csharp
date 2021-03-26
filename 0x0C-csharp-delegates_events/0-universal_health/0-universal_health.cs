@@ -6,21 +6,21 @@ public class Player
     /// <summary>The player name.</summary>
     private string name { get; set; }
 
-    private float maxHp;
+    private float _maxHp;
     /// <summary>The maximum player health.</summary>
     private float maxHp
     {
-        get { return maxHp; }
+        get { return _maxHp; }
         set
         {
             if (value < 0f)
             {
                 Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
-                maxHp = 100f;
+                _maxHp = 100f;
             }
             else
             {
-                maxHp = value;
+                _maxHp = value;
             }
         }
     }
@@ -35,7 +35,7 @@ public class Player
     {
         this.name = name;
         this.maxHp = maxHp;
-        this.hp = maxHp;
+        this.hp = this.maxHp;
     }
 
     /// <summary>Print out the player's health.</summary>
