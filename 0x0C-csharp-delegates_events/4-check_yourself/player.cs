@@ -24,6 +24,7 @@ public delegate void CalculateHealth(float v);
 /// <summary>Provides current HP arguments.</summary>
 public class CurrentHPArgs: EventArgs
 {
+    /// <summary>Current Health.</summary>
     public readonly float currentHp;
 
     /// <summary>The CurrentHPArgs constructor.</summary>
@@ -61,6 +62,10 @@ public class Player
     /// <summary>The current player health.</summary>
     private float hp { get; set; }
 
+    private string status;
+    
+    EventHandler<CurrentHPArgs> HPCheck;
+
     /// <summary>Player constructor.</summary>
     /// <param name="name">The player name, "Player" by default.</param>
     /// <param name="maxHp">The maximum player health, 100 by default.</param>
@@ -69,6 +74,8 @@ public class Player
         this.name = name;
         this.maxHp = maxHp;
         this.hp = this.maxHp;
+        this.status = $"{this.name} is ready to go!";
+        HPCheck += CheckStatus;
     }
 
     /// <summary>Print out the player's health.</summary>
