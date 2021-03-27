@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections;
 
 /// <summary>A base class for all game objects.</summary>
 abstract class Base
