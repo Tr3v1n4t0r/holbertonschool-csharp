@@ -62,21 +62,21 @@ class Decoration: Base, IInteractive, IBreakable
     {
         if (durability <= 0)
             throw new Exception("Durability must be greater than 0");
-        
+
         this.name = name;
         this.durability = durability;
         this.isQuestItem = isQuestItem;
     }
 
     /// <summary>Output of interacting with a decoration.</summary>
-    public void Interact() 
+    public void Interact()
     {
         if (durability <= 0)
         {
             Console.WriteLine($"The {name} has been broken.");
             return;
         }
-        
+
         if (isQuestItem)
         {
             Console.WriteLine($"You look at the {name}. There's a key inside.");
@@ -128,7 +128,7 @@ class Key: Base, ICollectable
         else
         {
             isCollected = true;
-            Console.WriteLine($"You pick up the {name}.");
+            Console.WriteLine($"You picked up the {name}.");
         }
     }
 }
